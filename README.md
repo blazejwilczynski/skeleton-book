@@ -1,3 +1,3 @@
-# Creepy Code
+# Skeleton book
 
-Just learining around for now!
+Website for my second book!
