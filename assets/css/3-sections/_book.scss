@@ -1,0 +1,313 @@
+.book {  
+    width: 100%;
+    padding-top: 35px;
+    display: block;
+  }
+  
+  .book-elements-wrap {
+    max-width: 1060px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .cover-container {
+    width: 475px;
+    height: 675px;
+    position: relative;
+  }
+  
+  
+  .skeleton-cover {
+    width: 475px;
+    height: 671.8px;
+    background-image: url('../img/skeleton-cover-hq.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    position: absolute;
+  }
+  
+
+  .book-download-container {
+    height: 720px;
+    width: 585px;
+    margin-left: 15px;
+    padding-top: 25px;
+    
+  
+  }
+  
+  .book-download-title {
+    text-align: center;
+    color: white;
+    opacity: 0.75;
+    font-size: 22px; 
+  }
+  
+  
+  .book-download-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .button-epub,.button-mobi,.button-pdf  {
+    font-size: 18px;
+    color: $base-text-color;
+    margin-left: 30px;
+    background: $skeleton-pink;
+    border: 2px solid $skeleton-pink;
+    border-radius: 1px;
+    padding:0.25em 1.0em;
+    text-decoration: none;
+  }
+  
+  .button-epub {
+    margin-left: 0px;
+  }
+  
+  
+  
+  .button-epub:hover, .button-mobi:hover, .button-pdf:hover {
+    background: white;
+    border-color: $skeleton-pink;
+    color: $skeleton-pink;
+   
+  }
+  
+  .book-description-wrap {
+    margin-bottom: 10px;
+    background: lightcoral;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .book-description {
+    margin: 50px auto;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 500px;
+    //text-align: justify;
+    color: $base-text-color;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+  }
+
+
+  /* media query 1150px */
+
+@media screen and (max-width: 1150px) {
+  
+  /* rockstar cover for 1150px dimensions */
+
+  .book-elements-wrap {
+    max-width: 1010px;
+  }  
+
+  .cover-container {
+    height: 600.9px;
+    width: 425px;
+  }  
+
+  .skeleton-cover {
+    height: 600.9px;
+    width: 425px;
+  }
+
+  
+  /* rockstar description and download buttons for 1150px dimensions */
+
+  .book-download-container {
+    height: 650px;
+    width: 450px;
+    margin-left: 30px;
+  } 
+
+  .book-download-title {
+    font-size: 20px;
+  }
+
+  
+
+  .book-description {
+    font-size: 16px;
+  }
+
+}
+
+
+/* media query 965px */
+
+@media screen and (max-width: 965px) {
+
+  .book .book-elements-wrap {
+    max-width: 950px;
+  }   
+
+ /* rockstar cover for 950px dimensions */
+
+.cover-container {
+  height: 565.6px;
+  width: 400px;
+}  
+
+.skeleton-cover {
+  height: 565.6px;
+  width: 400px;
+}
+
+
+.book-download-container {
+  height: 620px;
+  width: 400px;
+  margin-left: 20px;
+} 
+
+.book-download-title {
+  font-size: 18px;
+}
+
+.book-description {
+  font-size: 15px;
+}
+
+}
+  
+
+/* media query 900px */
+
+@media screen and (max-width: 900px) {
+
+  .book {
+    padding-top: 0px;
+  }
+
+
+  .book-elements-wrap {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .cover-container {
+    height: 671.6px;
+    width: 475px;
+  }   
+
+  .rockstar-cover {
+    height: 671.6px;
+    width: 475px;
+  }
+
+  .book-download-container {
+    width: 585px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }  
+
+ .book-download-title {
+    font-size: 22px;
+  } 
+
+  .book-description {
+    font-size: 18px;
+  } 
+ 
+} 
+
+/* media query 560px */
+
+@media screen and (max-width: 560px) {
+
+  .cover-container {
+    height: 636.3px;
+    width: 450px;
+  }   
+
+  .skeleton-cover {
+    height: 636.3px;
+    width: 450px;
+  }
+
+ .book-download-container {
+    width: 450px;
+  }  
+
+  .book-download-title {
+    font-size: 20px;
+  } 
+
+  .book-description {
+    font-size: 17px;
+  } 
+}
+  
+
+  /* media query 500px */
+
+  @media screen and (max-width: 500px) {
+
+    .cover-container {
+      height: 537.3px;
+      width: 380px;
+    }   
+  
+    .skeleton-cover {
+      height: 537.3px;
+      width: 380px;
+    }
+
+    .book-download-container {
+      width: 375px;
+      height: 730px;
+    }  
+  
+    .book-download-title {
+      font-size: 20px;
+    } 
+  
+    .book-description {
+      font-size: 17px;
+    
+    } 
+  }
+  
+
+   /* media query 400px */
+
+   @media screen and (max-width: 400px) {
+
+    .cover-container {
+      height: 410px;
+      width: 290px;
+    }  
+
+    .skeleton-cover {
+      height: 410px;
+      width: 290px;
+    }
+  
+
+   .button-epub,.button-mobi,.button-pdf  {
+      font-size: 15.5px;
+      color: white;
+      
+      background: $skeleton-pink;
+      border: 2px solid $skeleton-pink;
+      border-radius: 1px;
+      padding:0.25em 1.0em;
+    }
+
+    .book-download-container {
+      width: 290px;
+      height: 730px;
+      padding-top: 0px;
+    }  
+
+  }

@@ -1,0 +1,238 @@
+.author {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    margin-top: -10px;
+    clear: both;
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-top: 35px;
+   
+}
+
+.author::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.author-info-wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  height: 330px;
+  z-index: 200;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.floppy  {
+  height: 330px;
+  width: 315px;
+  background-image: url('../img/author-floppy-315-x-330.svg');
+  background-repeat: no-repeat;
+
+}
+
+.bobek-photo-wrap {
+  height: 326px;
+  width: 310px;
+}
+
+.photo-red-border {
+  height: 326px;
+  width: 310px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-white-border {
+  height: 320px;
+  width: 304px;
+  background-color: $skeleton-white;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-blue-border {
+  height: 314px;
+  width: 298px;
+  background-color: $skeleton-pink;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bobek-photo {
+  height: 308px;
+  width: 292px;
+  //background-color: $dark-blue;
+  border-radius: 2px;
+  background-image: url('../img/bobek-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.about-author {
+  height: 330px;
+  width: 330px;
+}
+
+.author-info-banner {
+  height: 22px;
+  width: 59px;
+  background-image: url('../img/info-25-67.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.author-description {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 17px;
+  color: $skeleton-white;
+  //text-align: justify;
+  margin-top: 25px;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1150px) { 
+ .floppy  {
+    display: none;
+  }
+
+  .author-info-wrap {
+    justify-content: center;
+  } 
+
+  .about-author {
+    margin-left: 30px;
+  }
+
+} 
+
+@media screen and (max-width: 800px) { 
+
+  .author {
+    height: 1100px;
+  }
+
+  .bobek-photo-wrap {
+    margin-top: 15px;
+  }
+  
+
+  .author-info-wrap {
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .floppy  {
+    display: block;
+    order: 3;
+  }
+
+
+ .about-author {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+
+
+  .about-author {
+   height: 330px;
+   width: 330px;
+}
+
+.author-info-banner {
+  height: 22px;
+  width: 59px;
+  background-image: url('../img/info-25-67.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.author-description {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 25px;
+
+}
+
+}
+
+@media screen and (max-width: 370px) { 
+
+ .bobek-photo-wrap {
+    height: 306px;
+    width: 290px;
+  }
+  
+  .photo-red-border {
+    height: 306px;
+    width: 290px;
+  }
+  
+  .photo-white-border {
+    height: 300px;
+    width: 284px;
+  }
+  
+  .photo-blue-border {
+    height: 294px;
+    width: 278px;
+  }
+ 
+  .bobek-photo {
+    height: 288px;
+    width: 272px;
+  }
+
+  .floppy  {
+    height: 304px;
+    width: 290px;
+    margin-top: 35px;
+
+  }
+
+  .about-author {
+    height: 330px;
+    width: 280px;
+  }
+  
+
+  .author-description {
+    width: 100%;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: justify;
+    margin-top: 25px;
+  
+  }
+
+}
+  

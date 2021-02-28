@@ -1,0 +1,248 @@
+header {
+    //background: #F1F1F1;
+    height: 35px;
+    max-width: 1215px;
+    //background-color: lightsalmon;
+    margin: 0 auto;
+    //padding-top: 16px;
+    //padding-left: 25px;
+    //display: flex;
+    align-items: center;
+    color: $base-text-color;
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .header-wrap {
+    display: flex;
+    width: 100%;
+  }
+  
+  .skeleton-logo {
+    display: inline-block;
+    height: 25px;
+    width: 37px;
+    //margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 7px;
+    background: url("../img/skeleton-logo-37-x-25.svg");
+    background-size: cover;
+  }
+  
+  nav {
+    width: 450px;
+    margin-top: 5px;
+    //background: lightseagreen;
+  }
+  
+  .nav-element {
+    display: inline-block;
+    height: 25px;
+    //width: 40px;
+    margin-left: 10px;
+    //background: lightskyblue;
+  }
+  
+  .nav-element > a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+  }
+  
+  .nav-element > a:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.5;
+  }
+
+  .polygon {
+    display: inline-block;
+    width: 16px;
+    height: 14.3px;
+    background-image: url('../img/polygon-19-x-17.svg');
+    background-repeat: no-repeat;
+    margin-left: 7px;
+      //margin-top: 6px
+    margin-top: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  #download:hover ~ #download-polygon {
+    opacity: 1;
+  
+  }
+  
+  #about:hover ~ #about-polygon {
+    opacity: 1;
+  }
+  
+
+  
+  .social-icons-wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: -webkit-calc(100% - 530px);
+    width: -moz-calc(100% - 530px);
+    width: calc(100% - 530px);
+    height: 25px;
+    margin-top: 5px;
+    //background: lightpink;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 23px;
+    height: 25px;
+    //background: lightseagreen;
+  }
+  
+  .social-logo {
+    height: 21px;
+    width: 21px;
+    background-repeat: no-repeat;
+    //background: lightsalmon;
+  }
+  
+  
+  .social-logo path {
+    fill: rgba(232, 44, 85, 1);
+    transition: all 0.4s ease;
+  }
+  
+  .social-logo circle {
+    fill: rgba(232, 44, 85, 1);
+    transition: all 0.4s ease;
+  }
+  
+  .social-logo:hover path {
+    fill: rgba(232, 44, 85, 0.75);
+  }
+  
+  .social-logo:hover circle {
+    fill: rgba(232, 44, 85, 0.75);
+  }
+  
+  .social-logo-dribbble path {
+    stroke: rgba(0, 0, 0, 0.75);
+    transition: all 0.4s ease;
+  }
+  
+  .social-logo-dribbble circle {
+    stroke: rgba(0, 0, 0, 0.75);
+    transition: all 0.4s ease;
+  }
+  
+  .social-logo-dribbble:hover path {
+    stroke: rgba(0, 0, 0, 0.55);
+    transition: all 0.4s ease;
+  }
+  
+  .social-logo-dribbble:hover circle {
+    stroke: rgba(0, 0, 0, 0.55);
+    transition: all 0.4s ease;
+  }
+  
+  /* Below repated css for mobile-social-icons to avoid transition effect (0.4s of visible icons after
+  closing menu. Also allows to change size of icons on mobile devices */
+  
+  .social-icons-wrap-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    margin-top: 50px;
+    //background: lightpink;
+  }
+  
+  .social-links-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 35px;
+    //background: lightseagreen;
+  }
+  
+  .social-logo-mobile {
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    //background: lightsalmon;
+  }
+  
+  .social-logo-dribbble-mobile {
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    //background: lightsalmon;
+  }
+  
+  .social-logo-mobile path {
+    fill: #F1F1F1;
+  }
+  
+  .social-logo-mobile circle {
+    fill: #F1F1F1;
+  }
+  
+  .social-logo-mobile:hover path {
+    fill: rgba(255, 255, 255, 0.55);
+  }
+  
+  .social-logo-mobile:hover circle {
+    fill:rgba(255, 255, 255, 0.55);
+  }
+  
+  .social-logo-dribbble-mobile path {
+    stroke: #F1F1F1;
+  }
+  
+  .social-logo-dribbble-mobile circle {
+    stroke: #F1F1F1;
+  }
+  
+  .social-logo-dribbble-mobile:hover path {
+    stroke: rgba(255, 255, 255, 0.55);
+  }
+  
+  .social-logo-dribbble-mobile:hover circle {
+    stroke: rgba(255, 255, 255, 0.55);
+  }
+  
+  /* Start of responsive header */
+  
+  @media screen and (max-width: 1285px) {
+    .skeleton-logo {
+      margin-left: 25px;
+    }
+  
+    .social-icons-wrap {
+      margin-right: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 1225px) {
+    .social-icons-wrap {
+      margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 1030px) {
+    .social-icons-wrap {
+      width: -webkit-calc(100% - 560px);
+      width: -moz-calc(100% - 560px);
+      width: calc(100% - 560px);
+    }
+  }
+  
+  @media screen and (max-width: 765px) {
+    nav {
+      display: none;
+    }
+  
+    .social-icons-wrap {
+      display: none;
+    }
+  }
